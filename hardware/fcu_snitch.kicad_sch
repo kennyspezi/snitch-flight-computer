@@ -2613,7 +2613,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:S8050"
+		(symbol "Transistor_BJT:MMBTA06"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2634,7 +2634,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "S8050"
+			(property "Value" "MMBTA06"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2645,7 +2645,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2658,7 +2658,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "http://www.unisonic.com.tw/datasheet/S8050.pdf"
+			(property "Datasheet" "https://diotec.com/request/datasheet/mmbta06.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2670,7 +2670,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92"
+			(property "Description" "0.5A Ic, 80V Vce, general purpose NPN"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2692,7 +2692,7 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=E 2=B 3=C"
+			(property "Sim.Pins" "1=B 2=E 3=C"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2703,7 +2703,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "S8050 NPN Low Voltage High Current Transistor"
+			(property "ki_keywords" "SMD"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2714,7 +2714,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2725,7 +2725,7 @@
 					)
 				)
 			)
-			(symbol "S8050_0_1"
+			(symbol "MMBTA06_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -2762,7 +2762,7 @@
 					)
 				)
 			)
-			(symbol "S8050_1_1"
+			(symbol "MMBTA06_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -2799,10 +2799,10 @@
 						(type outline)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "E"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2817,10 +2817,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "B"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3838,145 +3838,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VDD"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 110.49 95.25)
@@ -4028,7 +3889,7 @@
 	)
 	(rectangle
 		(start 172.72 16.51)
-		(end 219.71 41.91)
+		(end 222.25 41.91)
 		(stroke
 			(width 0)
 			(type default)
@@ -4039,8 +3900,8 @@
 		(uuid "ac1d5a48-b61b-45b0-9b07-606fac339b88")
 	)
 	(rectangle
-		(start 171.45 64.77)
-		(end 214.63 102.87)
+		(start 171.45 66.04)
+		(end 214.63 109.22)
 		(stroke
 			(width 0)
 			(type default)
@@ -4052,7 +3913,7 @@
 	)
 	(text "External SPI"
 		(exclude_from_sim no)
-		(at 191.516 98.298 0)
+		(at 191.516 104.648 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -4147,7 +4008,7 @@
 		(uuid "008a2695-b6eb-4bd0-b964-6b1c813df765")
 	)
 	(junction
-		(at 187.96 71.12)
+		(at 187.96 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02945735-b4d8-4d23-a7f7-c722129a4174")
@@ -4177,13 +4038,19 @@
 		(uuid "0d5ad0ad-195a-42f3-808b-e17e9244b9d0")
 	)
 	(junction
+		(at 35.56 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "106d5ddb-c0fc-4537-a59e-2c08aefb57b7")
+	)
+	(junction
 		(at 255.27 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2139ceec-5010-43c8-941d-d8e1915afa6f")
 	)
 	(junction
-		(at 193.04 76.2)
+		(at 193.04 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24171c88-ac07-43f5-a484-b4a57fff24ef")
@@ -4205,6 +4072,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "316144be-7da4-4eb5-86f1-2b58142116e1")
+	)
+	(junction
+		(at 201.93 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "360c0e1a-3c2f-4a9c-92b9-5f663f1e902a")
 	)
 	(junction
 		(at 275.59 45.72)
@@ -4237,7 +4110,7 @@
 		(uuid "65185491-911c-498f-bbdc-e93003256cbe")
 	)
 	(junction
-		(at 190.5 73.66)
+		(at 190.5 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b436cfd-999a-4d58-8fd8-87e07f8031dd")
@@ -4247,6 +4120,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ce762f8-3b9b-4185-97bc-82c45a0d81dc")
+	)
+	(junction
+		(at 194.31 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cac96c1-475b-4640-9434-7e7bd86f28b5")
 	)
 	(junction
 		(at 30.48 125.73)
@@ -4259,18 +4138,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8151f6e5-0c46-4452-994f-2386f4ca6278")
-	)
-	(junction
-		(at 185.42 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8707e26a-8ce6-4043-a8ac-ec2333356ef1")
-	)
-	(junction
-		(at 35.56 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b5165d6-57aa-4db2-bac0-ea4de2a95bb6")
 	)
 	(junction
 		(at 234.95 58.42)
@@ -4315,6 +4182,12 @@
 		(uuid "eec2125b-9573-4d9a-9a4b-766695d263d0")
 	)
 	(junction
+		(at 185.42 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f136b976-8dc9-447e-8cf2-c85f90883c10")
+	)
+	(junction
 		(at 222.25 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4353,16 +4226,6 @@
 	(no_connect
 		(at 267.97 67.31)
 		(uuid "b334862c-5752-4c2b-8361-266873b6a6b8")
-	)
-	(wire
-		(pts
-			(xy 35.56 128.27) (xy 39.37 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0208f633-6175-42f7-85a2-72a8ccf6fe6b")
 	)
 	(wire
 		(pts
@@ -4456,6 +4319,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 77.47) (xy 203.2 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba844dd-46b0-40d1-b4a7-3dbde29259ae")
+	)
+	(wire
+		(pts
 			(xy 179.07 50.8) (xy 273.05 50.8)
 		)
 		(stroke
@@ -4506,7 +4379,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 71.12) (xy 187.96 71.12)
+			(xy 170.18 80.01) (xy 172.72 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4516,7 +4389,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 76.2) (xy 193.04 76.2)
+			(xy 177.8 85.09) (xy 193.04 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4606,7 +4479,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 71.12) (xy 193.04 71.12)
+			(xy 187.96 80.01) (xy 203.2 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4716,7 +4589,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 76.2) (xy 203.2 76.2)
+			(xy 193.04 85.09) (xy 203.2 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4746,6 +4619,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 128.27) (xy 49.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e00a168-ca50-468d-a7ee-e569976ff615")
+	)
+	(wire
+		(pts
 			(xy 261.62 34.29) (xy 275.59 34.29)
 		)
 		(stroke
@@ -4763,16 +4646,6 @@
 			(type default)
 		)
 		(uuid "40a69c1e-9e1e-4297-a000-52e80bfc093d")
-	)
-	(wire
-		(pts
-			(xy 33.02 125.73) (xy 33.02 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41a5578c-124b-4892-9db4-be9e6ae4230f")
 	)
 	(wire
 		(pts
@@ -4796,6 +4669,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 77.47) (xy 201.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "439367df-c609-4f41-9beb-f4862ba7677e")
+	)
+	(wire
+		(pts
 			(xy 256.54 135.89) (xy 256.54 139.7)
 		)
 		(stroke
@@ -4813,16 +4696,6 @@
 			(type default)
 		)
 		(uuid "453df0b6-2827-4a6b-8220-dfb1c8181654")
-	)
-	(wire
-		(pts
-			(xy 46.99 128.27) (xy 49.53 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45c71b19-175c-498e-ab10-80bd4c8fb7d0")
 	)
 	(wire
 		(pts
@@ -4876,7 +4749,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 76.2) (xy 193.04 78.74)
+			(xy 193.04 85.09) (xy 193.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5026,13 +4899,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 73.66) (xy 190.5 78.74)
+			(xy 190.5 82.55) (xy 190.5 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f558942-2ecd-4482-a2c5-7716a830d05c")
+	)
+	(wire
+		(pts
+			(xy 194.31 76.2) (xy 194.31 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a512a4-73c2-457a-a6b4-192ed4dbe983")
 	)
 	(wire
 		(pts
@@ -5056,7 +4939,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 125.73) (xy 33.02 125.73)
+			(xy 30.48 125.73) (xy 35.56 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5116,7 +4999,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 73.66) (xy 203.2 73.66)
+			(xy 190.5 82.55) (xy 203.2 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5246,7 +5129,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 78.74) (xy 187.96 71.12)
+			(xy 187.96 87.63) (xy 187.96 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5266,7 +5149,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 73.66) (xy 190.5 73.66)
+			(xy 177.8 82.55) (xy 190.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5293,6 +5176,16 @@
 			(type default)
 		)
 		(uuid "987725d9-975e-4211-8cf4-49fe7c093f4a")
+	)
+	(wire
+		(pts
+			(xy 177.8 80.01) (xy 187.96 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e72851-d5f5-4b6e-a1ec-763a2d56dbbe")
 	)
 	(wire
 		(pts
@@ -5326,7 +5219,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 73.66) (xy 172.72 73.66)
+			(xy 170.18 82.55) (xy 172.72 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5406,7 +5299,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 76.2) (xy 172.72 76.2)
+			(xy 170.18 85.09) (xy 172.72 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5426,7 +5319,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 185.42 68.58)
+			(xy 170.18 77.47) (xy 185.42 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5473,16 +5366,6 @@
 			(type default)
 		)
 		(uuid "b80ef9d6-bdcd-4857-a1db-9eb364ebc083")
-	)
-	(wire
-		(pts
-			(xy 33.02 128.27) (xy 35.56 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9d3e818-b687-47cd-ab98-b71794124268")
 	)
 	(wire
 		(pts
@@ -5616,16 +5499,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 71.12) (xy 203.2 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d22ea37e-57c7-4353-856d-0ce2b07a0b6f")
-	)
-	(wire
-		(pts
 			(xy 68.58 68.58) (xy 68.58 71.12)
 		)
 		(stroke
@@ -5756,7 +5629,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 68.58) (xy 185.42 78.74)
+			(xy 185.42 77.47) (xy 185.42 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5776,7 +5649,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 68.58) (xy 203.2 68.58)
+			(xy 185.42 77.47) (xy 194.31 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5896,6 +5769,26 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 76.2) (xy 201.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc08bcc9-d7f3-4aa6-ba3d-cf108afcd0d7")
+	)
+	(wire
+		(pts
+			(xy 35.56 125.73) (xy 35.56 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1f6609-6294-4456-a2d8-82f09b603992")
+	)
+	(wire
+		(pts
 			(xy 179.07 55.88) (xy 236.22 55.88)
 		)
 		(stroke
@@ -5984,6 +5877,16 @@
 		)
 		(uuid "228859ef-de64-4a23-b1b0-be2f951c640f")
 	)
+	(label "VMON"
+		(at 185.42 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2378e4d5-8c0f-4a08-83f7-1835c7cd021e")
+	)
 	(label "DRDY"
 		(at 69.85 40.64 0)
 		(effects
@@ -6014,6 +5917,16 @@
 		)
 		(uuid "392875e6-aa08-460c-a3e0-85d5e11c19b5")
 	)
+	(label "CTS"
+		(at 185.42 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ae5468d-c827-40b5-b267-dc089a062d6d")
+	)
 	(label "BOOT0"
 		(at 232.41 148.59 180)
 		(effects
@@ -6024,6 +5937,16 @@
 		)
 		(uuid "4ec556bd-bfce-4daa-9682-12b7b89fa1ac")
 	)
+	(label "RX1"
+		(at 185.42 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b401424-ddea-42f6-b06c-6e3fcad37f3d")
+	)
 	(label "SWDIO"
 		(at 127 57.15 180)
 		(effects
@@ -6033,6 +5956,16 @@
 			(justify right bottom)
 		)
 		(uuid "70cb14e2-0add-4ee1-a7de-97774a1f2634")
+	)
+	(label "TX1"
+		(at 185.42 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77114aa6-9538-4a18-a70b-8cd1eac3181c")
 	)
 	(label "HSDA"
 		(at 69.85 59.69 0)
@@ -6054,6 +5987,16 @@
 		)
 		(uuid "cb188174-af96-46ce-910b-1b6f0b0edfde")
 	)
+	(label "CK"
+		(at 185.42 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8796680-7a97-47c8-80d2-a3a60a83f0d9")
+	)
 	(label "DRDY"
 		(at 48.26 123.19 180)
 		(effects
@@ -6063,6 +6006,16 @@
 			(justify right bottom)
 		)
 		(uuid "e2ac13a2-cd3b-417f-8849-1e43bfbcfdbf")
+	)
+	(label "RTS"
+		(at 185.42 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6cec225-2951-4abd-a568-cb60cd8fc630")
 	)
 	(label "NRST"
 		(at 127 52.07 180)
@@ -6086,7 +6039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00afe8bb-ed86-42aa-83bb-3678d0e3ec8d")
-		(property "Reference" "J4"
+		(property "Reference" "J1"
 			(at 217.17 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6151,7 +6104,87 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "J4")
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 201.93 73.66 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "0468a754-ad76-4db3-bb44-7c3b7e6b4487")
+		(property "Reference" "R14"
+			(at 198.628 74.168 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Small_US"
+			(at 198.12 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 201.93 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 201.93 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bb2b2f86-4744-408d-af89-ed190d41e154")
+		)
+		(pin "1"
+			(uuid "1c36ed0d-2fcc-4020-9dfc-abcee42e34f3")
+		)
+		(instances
+			(project "fcu_snitch"
+				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -6169,7 +6202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "051e1d73-2be8-4936-9860-a1f04dd42c2f")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR014"
 			(at 114.3 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6231,7 +6264,87 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR061")
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 194.31 73.66 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "0a7adbaa-cfc0-48a6-aab9-083391127f9c")
+		(property "Reference" "R13"
+			(at 191.008 74.168 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Small_US"
+			(at 190.5 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 194.31 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 194.31 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9a2cc917-8d05-4041-a156-20442d673164")
+		)
+		(pin "1"
+			(uuid "ece56e4d-a9cc-4099-9643-afb68352dac5")
+		)
+		(instances
+			(project "fcu_snitch"
+				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6239,7 +6352,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 187.96 88.9 0)
+		(at 187.96 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6248,8 +6361,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "158fc90c-d302-4c7e-aa9b-d2695a149b03")
-		(property "Reference" "#PWR052"
-			(at 187.96 95.25 0)
+		(property "Reference" "#PWR012"
+			(at 187.96 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6260,7 +6373,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.484 92.456 90)
+			(at 189.484 101.346 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6272,7 +6385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 88.9 0)
+			(at 187.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6283,7 +6396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 88.9 0)
+			(at 187.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6294,7 +6407,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 88.9 0)
+			(at 187.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6310,7 +6423,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR052")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6328,7 +6441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "160950e4-215f-4e3a-8e00-eb5c49265bc7")
-		(property "Reference" "C45"
+		(property "Reference" "C4"
 			(at 41.91 152.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6392,7 +6505,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "C45")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6409,7 +6522,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "164e9ccd-c134-406f-9af6-673a81f012e2")
-		(property "Reference" "R19"
+		(property "Reference" "R8"
 			(at 77.978 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6472,7 +6585,86 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R19")
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 201.93 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22f23b0a-c1b5-4bb7-9d73-c589740ea9cd")
+		(property "Reference" "#PWR09"
+			(at 201.93 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "666167fb-9a1a-4739-b155-5345e5e4e2f2")
+		)
+		(instances
+			(project "fcu_snitch"
+				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6490,7 +6682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25e329f8-6ecc-4285-b734-329616dbf8c4")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR021"
 			(at 278.13 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6551,91 +6743,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 43.18 128.27 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "260e29a8-9f53-4705-a245-f74cdfa9953a")
-		(property "Reference" "R23"
-			(at 41.9099 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 44.4499 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.18 130.048 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 43.18 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f2a865e2-9c87-45a8-ac8d-294379377995")
-		)
-		(pin "2"
-			(uuid "868f87c5-c17e-43a7-b1d1-30791840d24f")
-		)
-		(instances
-			(project "fcu_snitch"
-				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R23")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6643,7 +6751,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 195.58 71.12 90)
+		(at 175.26 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6651,9 +6759,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "26cbe20b-cbed-41a2-9c11-c690dc32ec29")
+		(uuid "28897e7e-5138-45d0-b4fe-b9054731c973")
 		(property "Reference" "R15"
-			(at 200.152 69.596 90)
+			(at 179.832 78.486 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6663,7 +6771,7 @@
 			)
 		)
 		(property "Value" "R_Small_US"
-			(at 195.58 67.31 90)
+			(at 175.26 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6674,7 +6782,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 195.58 71.12 0)
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6685,7 +6793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 71.12 0)
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6696,7 +6804,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 195.58 71.12 0)
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6707,10 +6815,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5ef511a1-1d5d-4a5a-b9e1-f1302992f3db")
+			(uuid "7edbabfd-a978-4704-90a4-ddfcacb8cdad")
 		)
 		(pin "1"
-			(uuid "eb9ae412-f76c-431f-91bd-8c5d7b1df6d8")
+			(uuid "51eb103d-ae0c-4e17-8d9c-0c3cd62216fd")
 		)
 		(instances
 			(project "fcu_snitch"
@@ -6731,10 +6839,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2c3bec52-14f3-4def-83e5-4ac99abd1a63")
-		(property "Reference" "R7"
-			(at 236.22 69.8499 0)
+		(property "Reference" "R12"
+			(at 235.966 71.374 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6746,6 +6853,7 @@
 		)
 		(property "Value" "R"
 			(at 236.22 72.3899 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6797,7 +6905,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R7")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6814,7 +6922,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30050487-9d25-4a97-b6dd-4fe1aba4ba88")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR05"
 			(at 241.3 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -6874,85 +6982,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 132.08 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30c175d8-8d3f-4af5-8cfb-2a878dba6a06")
-		(property "Reference" "#PWR042"
-			(at 132.08 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 132.08 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 132.08 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "041c1e74-573e-437b-922c-93ab5e72b086")
-		)
-		(instances
-			(project "fcu_snitch"
-				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR042")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7050,7 +7080,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "377ba3ad-7486-4d89-9f06-b077cf045865")
-		(property "Reference" "R9"
+		(property "Reference" "R2"
 			(at 180.848 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7113,7 +7143,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R9")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -7130,7 +7160,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e5dc784-cc23-47cd-82a1-8a6c61f39d9a")
-		(property "Reference" "R11"
+		(property "Reference" "R6"
 			(at 181.102 47.498 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7193,7 +7223,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R11")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7201,7 +7231,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 208.28 71.12 0)
+		(at 208.28 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7211,8 +7241,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "551e352a-8a8b-4f6a-ba79-2868ae928f75")
-		(property "Reference" "J5"
-			(at 209.55 71.1199 0)
+		(property "Reference" "J3"
+			(at 209.55 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7223,7 +7253,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Socket"
-			(at 209.55 73.6599 0)
+			(at 209.55 82.5499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7235,7 +7265,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal"
-			(at 208.28 71.12 0)
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7246,7 +7276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 71.12 0)
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7257,7 +7287,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 208.28 71.12 0)
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7282,7 +7312,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "J5")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7300,7 +7330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58de300a-4874-4ab1-92cd-2046877ea20e")
-		(property "Reference" "R22"
+		(property "Reference" "R1"
 			(at 72.39 30.4801 0)
 			(hide yes)
 			(show_name no)
@@ -7366,7 +7396,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R22")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7384,7 +7414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f0b0977-9e1e-472a-ae55-7e9acf83ef84")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR022"
 			(at 214.63 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -7445,7 +7475,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR038")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7462,7 +7492,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "641eb454-579b-4423-9b9a-fac44aab2d48")
-		(property "Reference" "R12"
+		(property "Reference" "R7"
 			(at 181.102 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7525,7 +7555,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R12")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7533,7 +7563,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 175.26 76.2 90)
+		(at 175.26 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7542,8 +7572,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "646b2d40-9333-4f56-b721-96d00505d5db")
-		(property "Reference" "R17"
-			(at 180.086 75.184 90)
+		(property "Reference" "R18"
+			(at 180.086 84.074 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7553,7 +7583,7 @@
 			)
 		)
 		(property "Value" "R_Small_US"
-			(at 175.26 72.39 90)
+			(at 175.26 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7564,7 +7594,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 175.26 76.2 0)
+			(at 175.26 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7575,7 +7605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 76.2 0)
+			(at 175.26 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7586,7 +7616,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 175.26 76.2 0)
+			(at 175.26 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7605,7 +7635,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -7622,7 +7652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "65eabeed-9416-4a43-953d-5d3ae6add309")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR023"
 			(at 38.1 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7682,7 +7712,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR057")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7699,7 +7729,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "674cea04-f6c6-427f-8958-49ee12078be2")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR07"
 			(at 85.09 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7759,7 +7789,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR053")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -7777,7 +7807,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "678ff57e-57f1-4317-9194-d5e9542bde4e")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 48.26 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7877,7 +7907,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7895,7 +7925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f9926c0-be3a-4ba2-a41f-cd64d93e3cbb")
-		(property "Reference" "C38"
+		(property "Reference" "C3"
 			(at 226.06 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7959,7 +7989,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "C38")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -7976,7 +8006,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71872ba0-1999-4153-ba6b-3277d00cf41b")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR01"
 			(at 74.93 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8036,7 +8066,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR055")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -8053,7 +8083,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79547b44-1010-478d-903f-4492eb2864cf")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR025"
 			(at 27.94 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -8115,7 +8145,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR056")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8133,7 +8163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b50bfe2-855d-464f-a395-c03b636e98d9")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR024"
 			(at 251.46 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8194,7 +8224,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR037")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -8212,7 +8242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c817296-13dc-425d-97be-6fd8bbcb95dc")
-		(property "Reference" "D6"
+		(property "Reference" "D2"
 			(at 247.65 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8284,7 +8314,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "D6")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8302,7 +8332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80deaa10-0cc7-440b-92b9-06d947003b99")
-		(property "Reference" "R3"
+		(property "Reference" "R24"
 			(at 238.7599 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8368,7 +8398,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R3")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8385,7 +8415,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "813915cd-5f10-4248-b544-d21dff8505f8")
-		(property "Reference" "J2"
+		(property "Reference" "J4"
 			(at 238.506 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8460,7 +8490,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "J2")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8476,10 +8506,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d2e0c14-2609-48c6-8d3e-29bf9d0f2bb4")
-		(property "Reference" "R21"
-			(at 134.62 109.2199 0)
+		(property "Reference" "R19"
+			(at 134.62 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8491,6 +8520,7 @@
 		)
 		(property "Value" "R"
 			(at 134.62 111.7599 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8542,7 +8572,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -8559,7 +8589,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "945a5ac8-a555-4535-8b8e-8701d4cfe576")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR016"
 			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -8621,7 +8651,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR058")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -8638,7 +8668,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "98fab893-1811-4f8d-891f-95df108bd5e1")
-		(property "Reference" "R18"
+		(property "Reference" "R3"
 			(at 94.742 36.576 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8701,7 +8731,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R18")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8709,7 +8739,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 175.26 73.66 90)
+		(at 175.26 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8718,8 +8748,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5688498-03f8-47d6-b504-9064e0d1f265")
-		(property "Reference" "R16"
-			(at 180.086 72.644 90)
+		(property "Reference" "R17"
+			(at 180.086 81.534 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8729,7 +8759,7 @@
 			)
 		)
 		(property "Value" "R_Small_US"
-			(at 175.26 69.85 90)
+			(at 175.26 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8740,7 +8770,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8751,7 +8781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8762,7 +8792,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8781,7 +8811,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8798,7 +8828,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab6505c5-8740-4ad8-b479-e0877c9aba53")
-		(property "Reference" "R13"
+		(property "Reference" "R10"
 			(at 181.102 54.356 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8861,7 +8891,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R13")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8878,7 +8908,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "acfb79d4-edc1-4dc5-b549-b5e9192a3ba8")
-		(property "Reference" "R14"
+		(property "Reference" "R11"
 			(at 181.356 57.404 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8941,7 +8971,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R14")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -8958,7 +8988,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b31e0334-7db8-4cc6-a600-481181e95815")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR03"
 			(at 213.36 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9020,7 +9050,84 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR051")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 194.31 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bd3ceba9-3d27-4550-854a-9ae2f0b4e25b")
+		(property "Reference" "#PWR08"
+			(at 194.31 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 189.992 69.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 194.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee60b42d-4fbe-46b2-adb8-8711d70c3170")
+		)
+		(instances
+			(project "fcu_snitch"
+				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9038,7 +9145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bed9f4ef-910f-49a8-87f2-84cec9a6322d")
-		(property "Reference" "C47"
+		(property "Reference" "C1"
 			(at 76.2 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9102,7 +9209,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "C47")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9119,7 +9226,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "c0bb65fe-57bf-4a89-b859-68039d9c57af")
-		(property "Reference" "R26"
+		(property "Reference" "R20"
 			(at 127 113.792 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9182,7 +9289,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R26")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -9200,7 +9307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c215529c-249c-47eb-80ea-9006a21ee80a")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR011"
 			(at 233.68 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -9261,7 +9368,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR046")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9269,7 +9376,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:ESDS304")
-		(at 187.96 83.82 0)
+		(at 187.96 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9280,7 +9387,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7186f04-b74f-401e-8d18-705781446496")
 		(property "Reference" "D4"
-			(at 196.85 82.5499 0)
+			(at 196.85 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9291,7 +9398,7 @@
 			)
 		)
 		(property "Value" "ESDS304"
-			(at 196.85 85.0899 0)
+			(at 196.85 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9302,7 +9409,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 173.99 101.6 0)
+			(at 173.99 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9314,7 +9421,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/esds304.pdf"
-			(at 187.96 96.52 0)
+			(at 187.96 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9325,7 +9432,7 @@
 			)
 		)
 		(property "Description" "4-channel 1Gbps TVS Diode Array, 2.3pF, 4.5V breakdown, 30kV contact & air gap, SOT-23-5"
-			(at 189.23 99.06 0)
+			(at 189.23 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9371,7 +9478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8055d13-418a-4f16-a0f1-2059e29e26ca")
-		(property "Reference" "R25"
+		(property "Reference" "R21"
 			(at 27.94 130.8101 0)
 			(hide yes)
 			(show_name no)
@@ -9437,7 +9544,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R25")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -9454,7 +9561,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c87be936-d609-4302-be4f-ee3150bb034c")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR017"
 			(at 233.68 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -9514,7 +9621,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR049")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9532,7 +9639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8d118da-ef24-47d1-9fd7-55b8b5e300fd")
-		(property "Reference" "D8"
+		(property "Reference" "D6"
 			(at 266.7 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9604,7 +9711,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "D8")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -9621,7 +9728,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca666329-c2e4-4448-8ff1-0ff6ef94d1da")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 73.914 158.496 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9711,7 +9818,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -9727,10 +9834,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ce6eae43-6822-4c52-af41-2f4ba7940f85")
-		(property "Reference" "R6"
-			(at 119.38 123.19 90)
+		(property "Reference" "R22"
+			(at 119.38 126.746 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9741,6 +9847,7 @@
 		)
 		(property "Value" "R"
 			(at 119.38 125.73 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9791,7 +9898,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R6")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -9809,7 +9916,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d32056f3-e0de-456e-8ae4-3d714df1a6dc")
-		(property "Reference" "D7"
+		(property "Reference" "D3"
 			(at 262.89 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9881,7 +9988,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "D7")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9898,7 +10005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d67ce709-1ecd-4833-bb4f-9f4d2b27cd55")
-		(property "Reference" "R20"
+		(property "Reference" "R9"
 			(at 77.978 54.864 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9961,7 +10068,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R20")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9978,7 +10085,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6ce2326-1c6e-4732-8382-a9f27495b9f5")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR015"
 			(at 30.48 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -10038,7 +10145,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR059")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10055,7 +10162,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b26d3e-516e-48b8-8734-16811d3f02d2")
-		(property "Reference" "R10"
+		(property "Reference" "R5"
 			(at 180.848 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10118,7 +10225,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R10")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10135,8 +10242,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d9750ba8-c4d2-4403-a2f8-73075e991f5f")
-		(property "Reference" "J3"
-			(at 253.9999 26.67 90)
+		(property "Reference" "J2"
+			(at 253.9999 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10218,7 +10325,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10321,7 +10428,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dcf00bc7-0508-4cd5-a455-6b9814ea5cd4")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR018"
 			(at 251.46 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -10383,7 +10490,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR034")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10400,7 +10507,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd453075-3c5c-4815-bc81-e11c45569b24")
-		(property "Reference" "R8"
+		(property "Reference" "R4"
 			(at 180.848 37.084 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10463,7 +10570,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R8")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -10481,7 +10588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd730cb3-1da7-4146-865d-89dec6ec43d9")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR019"
 			(at 132.08 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10542,14 +10649,14 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR041")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:S8050")
+		(lib_id "Transistor_BJT:MMBTA06")
 		(at 129.54 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -10582,7 +10689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 134.62 131.445 0)
 			(hide yes)
 			(show_name no)
@@ -10595,7 +10702,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.unisonic.com.tw/datasheet/S8050.pdf"
+		(property "Datasheet" "https://diotec.com/request/datasheet/mmbta06.pdf"
 			(at 129.54 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10607,7 +10714,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92"
+		(property "Description" "0.5A Ic, 80V Vce, general purpose NPN"
 			(at 129.54 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10640,7 +10747,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=E 2=B 3=C"
+		(property "Sim.Pins" "1=B 2=E 3=C"
 			(at 129.54 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10681,7 +10788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de090cf4-df7b-44f6-9e99-8f62e3138826")
-		(property "Reference" "C46"
+		(property "Reference" "C2"
 			(at 87.63 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10745,7 +10852,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "C46")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -10762,7 +10869,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e85f9407-a77e-40be-9f7a-bbd48f89e91b")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR04"
 			(at 269.24 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -10824,7 +10931,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR050")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10948,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee370727-965a-4b6b-87c3-30f186081f3f")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR020"
 			(at 43.18 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10903,7 +11010,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR060")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -11001,10 +11108,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f32d849e-4acd-4b16-a9d8-b45dc6cbd7eb")
-		(property "Reference" "R5"
-			(at 236.22 80.0099 0)
+		(property "Reference" "R16"
+			(at 235.966 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11016,6 +11122,7 @@
 		)
 		(property "Value" "R"
 			(at 236.22 82.5499 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11067,7 +11174,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R5")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -11084,7 +11191,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f534f035-6287-459a-a106-4f04c63029c0")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR02"
 			(at 246.38 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11144,7 +11251,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR048")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -11161,7 +11268,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f69ec238-c043-4af8-b456-0cda83ad973a")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR010"
 			(at 95.25 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -11223,7 +11330,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR054")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -11241,7 +11348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8fa0f84-2afe-400b-b2c4-140abbdbb785")
-		(property "Reference" "R24"
+		(property "Reference" "R23"
 			(at 33.02 133.3501 0)
 			(hide yes)
 			(show_name no)
@@ -11307,7 +11414,84 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "R24")
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 132.08 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f92d180a-6b4a-4c37-bdf3-29a2a5c88102")
+		(property "Reference" "#PWR013"
+			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 127.762 102.362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 132.08 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e963c7fe-da37-40ad-b815-8aa35d4a2d6f")
+		)
+		(instances
+			(project "fcu_snitch"
+				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -11324,7 +11508,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9be788f-71d1-4520-bfca-caf53ba9016e")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR06"
 			(at 255.27 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11386,7 +11570,7 @@
 		(instances
 			(project "fcu_snitch"
 				(path "/4e6e482c-7502-4f62-a617-96d5d268da41"
-					(reference "#PWR062")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -11394,7 +11578,7 @@
 	)
 	(sheet
 		(at 130.81 27.94)
-		(size 39.37 54.61)
+		(size 39.37 59.69)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11405,7 +11589,7 @@
 			(type solid)
 		)
 		(fill
-			(color 153 72 84 1)
+			(color 153 83 50 0.3411764706)
 		)
 		(uuid "e4bd811d-230e-4535-80fc-f7b420e12959")
 		(property "Sheetname" "STM32WLE5 + Radio"
@@ -11420,7 +11604,7 @@
 			)
 		)
 		(property "Sheetfile" "stm32-peri.kicad_sch"
-			(at 130.81 83.1346 0)
+			(at 130.81 88.2146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11521,7 +11705,7 @@
 			)
 		)
 		(pin "SPI2_{CS}" output
-			(at 170.18 68.58 0)
+			(at 170.18 77.47 0)
 			(uuid "1ac35e0a-f63e-4feb-aea9-71d4b6df86dc")
 			(effects
 				(font
@@ -11531,7 +11715,7 @@
 			)
 		)
 		(pin "SPI2_{MISO}" input
-			(at 170.18 71.12 0)
+			(at 170.18 80.01 0)
 			(uuid "7720faa2-fc92-40db-9020-e6d0b775d95c")
 			(effects
 				(font
@@ -11541,7 +11725,7 @@
 			)
 		)
 		(pin "SPI2_{MOSI}" input
-			(at 170.18 73.66 0)
+			(at 170.18 82.55 0)
 			(uuid "02bcb8c3-de3b-4293-889a-c5c434738f17")
 			(effects
 				(font
@@ -11551,7 +11735,7 @@
 			)
 		)
 		(pin "SPI2_{SCK}" input
-			(at 170.18 76.2 0)
+			(at 170.18 85.09 0)
 			(uuid "5885318f-209c-48c8-a6e2-69934acb144b")
 			(effects
 				(font
