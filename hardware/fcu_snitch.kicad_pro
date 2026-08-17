@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -76,7 +76,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "unconnected_items|147376000|83200000|F.Cu|4|1b814814-fbf9-42ba-8f8a-856eb9e66465|8de2ff6d-71f0-4546-a398-0cb66ed85653",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -211,8 +216,11 @@
       ],
       "track_widths": [
         0.0,
+        0.0,
         0.2,
         0.215666,
+        0.3,
+        0.35,
         0.4,
         0.6,
         1.0
@@ -251,6 +259,10 @@
         {
           "diameter": 0.5,
           "drill": 0.2
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
         },
         {
           "diameter": 0.9,
@@ -832,7 +844,7 @@
         "uuid": "4e6e482c-7502-4f62-a617-96d5d268da41"
       }
     ],
-    "used_designators": "BT1,J1-5,#PWR1-65,Y1-3,C1-50,D1-8,L1-10,R1-28,XTAL1,BZ1,Q1,U1-6,IC1-2",
+    "used_designators": "MCU1,BT1,J1-5,#PWR1-68,Y1-3,C1-50,L1-10,R1-28,H1-4,XTAL1,BZ1,Q1,D1-8,U1-6,IC1-2",
     "variants": []
   },
   "sheets": [
